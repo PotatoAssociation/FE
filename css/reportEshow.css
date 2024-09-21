@@ -1,4 +1,4 @@
-/* ÀüÃ¼ ·¹ÀÌ¾Æ¿ô ¹× ½ºÅ¸ÀÏ */
+/* ì „ì²´ ë ˆì´ì•„ì›ƒ ë° ìŠ¤íƒ€ì¼ */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -30,7 +30,7 @@ body {
     background-color: #fff;
 }
 
-/* »ó´Ü¹Ù ½ºÅ¸ÀÏ */
+/* ìƒë‹¨ë°” ìŠ¤íƒ€ì¼ */
 header {
     position: fixed;
     width: 100%;
@@ -84,7 +84,7 @@ nav {
     color: #1c8b49;
 }
 
-/* »çÀÌµå¹Ù ½ºÅ¸ÀÏ */
+/* ì‚¬ì´ë“œë°” ìŠ¤íƒ€ì¼ */
 .sidebar {
     width: 15%;
     background-color: #e0e0e0;
@@ -130,7 +130,7 @@ nav {
     color: white;
 }
 
-/* ¸ŞÀÎ ÄÜÅÙÃ÷ ½ºÅ¸ÀÏ */
+/* ë©”ì¸ ì½˜í…ì¸  ìŠ¤íƒ€ì¼ */
 .back_button{
     text-decoration: none;
     font-weight:bold;
@@ -164,7 +164,7 @@ nav {
     height:auto;
 }
 
-/* ½Å°í ¿Ï·áµÈ °Ô½Ã¹° Å×ÀÌºí */
+/* ì‹ ê³  ì™„ë£Œëœ ê²Œì‹œë¬¼ í…Œì´ë¸” */
 
 
 table,th,tr,td{
@@ -181,7 +181,7 @@ th{
 
 
 
-/* ÇªÅÍ ½ºÅ¸ÀÏ */
+/* í‘¸í„° ìŠ¤íƒ€ì¼ */
 footer {
     background: #333;
     color: white;
