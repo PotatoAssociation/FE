@@ -5,46 +5,62 @@ header {
     top: 0;
     z-index: 1;
     background-color: #6cb26f;
-    padding: 10px 0; 
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     display: flex;
+    position: relative;
+    background-color: #6cb26f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 .logo {
     width: 50px;
     height: auto;
-    margin-right: 10px;
+    align-items: center;
 }
 
 .title_logo {
-    font-size: 30px;
+    margin-left: 10px;
+    font-size: 45px;
     font-weight: bold;
     color: white;
     text-decoration: none;
+    flex-grow: 1;
+    justify-content: flex-start;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-links li {
-    margin-left: 20px;
-}
 
 .nav-links li a {
     color: white;
+    margin:0px 10px;
     font-weight: bold;
     text-decoration: none;
 }
 
+.nav-links li a:hover {
+    color: #1c8b49; 
+}
+
 .main {
-    margin-top: 100px;
-    padding: 20px;
+    top: 0;
+    margin: 0;
+    margin-top: 80px;
 }
 
 .hero {
