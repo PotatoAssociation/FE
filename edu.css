@@ -1,0 +1,278 @@
+
+/* header 전체 스타일 */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+/* nav 내부를 flex로 설정 */
+nav {
+    position: relative;
+    background-color: #6cb26f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* 왼쪽, 오른쪽 배치 */
+    /*width: 100%;  nav가 헤더 전체를 차지하게 설정 */
+    align-items: center;
+}
+
+
+/* 로고 스타일 */
+.logo {
+    width: 50px;
+    height: auto;
+    align-items: center;
+}
+
+
+/* 제목 스타일 */
+.title_logo {
+    margin-left: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    flex-wrap:wrap;
+    text-decoration: none;
+    flex-grow:1;
+    justify-content: flex-start;
+}
+
+
+
+/* 메뉴를 오른쪽 끝으로 배치 */
+.nav-links {
+    width: 100%;
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li a {
+    margin:0px 10px; /* 메뉴 항목 간 간격 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: white; /* 링크 텍스트 색상 */
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    color: #1c8b49; 
+}
+
+.content-container {    
+    top: 0;
+    margin: 0;
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0;
+    background: white;
+    word-break: keep-all;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 15%;
+    background-color: #e0e0e0;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1.2rem;
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 0.8rem;
+}
+
+.sidebar ul li a {
+    font-size: 1rem;
+    display: block;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Main Content Area */
+.education-container {
+    width: 85%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.education-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.education-container p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2.5rem;
+}
+
+/* Video Section */
+.video-section {
+    margin-bottom: 3rem;
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.video-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.video-card p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Blog Section */
+.blog-section h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.blog-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.blog-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.blog-card p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+footer .contact a:hover {
+    text-decoration: underline;
+}
