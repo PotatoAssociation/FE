@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>신고 완료된 게시물</title>
-    <link rel="stylesheet" href="./css/reportEshow.css">
     <link rel="icon" href="nk_logo.png"/>
     <link rel="apple-touch-icon" href="nk_logo.png"/>
+    <title>신고 완료된 게시물</title>
+    <link rel="stylesheet" href="reportEshow.css">
+    <script src="reportEshow.js" defer></script> <!-- JavaScript 분리 -->
 </head>
 <body>
     <div class="wrapper">
@@ -41,64 +42,55 @@
             <main class="report-content">
                 <a href="reportE.html" class="back_button"> &lt;게시글 목록</a>
                 <div id="wrap">
-                    <!-- con 시작-->
                     <div id="conArea">
                         <div class="outInner">
-                            <!-- 우측콘텐츠 시작-->
                             <div id="contents">
                                 <h2>게시글 내용</h2>
                                 <table class="content_table_wrap">
-                    
-                    <colgroup>
-                        <col style="width: 120px;">
-                        <col style="width: auto">
-                    </colgroup>
-                    <tbody>
-                        <tr>
-                            <th scope="row">제목</th>
-                            <td class="left">2024 공원 유원지 현황</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">작성자</th>
-                            <td class="left">혜진이</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">등록일</th>
-                            <td class="left">2024-07-24</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">좋아요</th>
-                            <td class="left"><svg xmlns="http://www.w3.org/2000/svg" id="like" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>180</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">내용</th>
-                            <td class="left"><p>안녕하세요.</p><p><br></p><p>환경민원포털 시스템에서 안내해드립니다.</p><p><br></p><p>환경민원포털의 안정적인 운영을 위한 서버 점검이 예정되어있습니다.</p><p><br></p><p>작업 시간 동안에는 환경민원포털 서비스가 중단되거나 끊김 현상이 발생할 수 있으니 양해 부탁드립니다.</p><p><br></p><p>아래 내용 확인하시어 민원 신청에 참고 부탁드립니다.</p><p><br></p><p>=========&nbsp; &nbsp; &nbsp; 내&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;용&nbsp; &nbsp; &nbsp; =========</p><p><br></p><p>○&nbsp; 사&nbsp; &nbsp; &nbsp;유&nbsp; : 회원가입 시 항목 변경</p><p><br></p><p>○&nbsp; 제한사항&nbsp; : 환경민원포털 시스템 전체</p><p><br></p><p>○&nbsp; 기&nbsp; &nbsp; &nbsp;간&nbsp; : '24.09.12.</p><p>&nbsp; (당일 19:00 ~ 익일 06:00)</p><p><br></p><p>※ 실제 작업상황에 따라 시간이 다소 변동될 수 있는 점 양해 부탁드립니다.&nbsp;</p><p><br></p><p>감사합니다.</p></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">사진</th>
-                            <td class="left"><img src="./img/trash.jpeg" class="report_img">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                
+                                    <colgroup>
+                                        <col style="width: 120px;">
+                                        <col style="width: auto">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">제목</th>
+                                            <td class="left" id="post-title"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">작성자</th>
+                                            <td class="left" id="post-author"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">등록일</th>
+                                            <td class="left" id="post-date"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">좋아요</th>
+                                            <td class="left">
+                                                <svg xmlns="http://www.w3.org/2000/svg" id="like" viewBox="0 0 512 512">
+                                                    <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/>
+                                                </svg>
+                                                <span id="like-count"></span>
+                                            </td>
+                                            
+                                            
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">내용</th>
+                                            <td class="left" id="post-content"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">사진</th>
+                                            <td class="left"><img src="" id="post-image" class="report_img"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <!-- 우측콘텐츠 끝//-->
                         </div>
                     </div>
-                    <!-- con 끝//-->
-                
                 </div>
             </main>
         </div>
-        <script>
-            var btn = document.getElementById("like")
-          
-            btn.addEventListener('click',function(){
-                      btn.classList.toggle('active')
-                    
-              })
-        </script>
 
         <!-- 푸터 -->
         <footer>
