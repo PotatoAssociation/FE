@@ -1,0 +1,137 @@
+/* header 전체 스타일 */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #6cb26f;
+    padding: 10px 0; /* 적절한 상단/하단 패딩 */
+}
+
+/* nav 내부를 flex로 설정 */
+nav {
+    display: flex;
+    justify-content: space-between; /* 왼쪽, 오른쪽 배치 */
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* logo와 title_logo의 좌우 배치 */
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.title_logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 메인 섹션의 위치 조정 */
+.main {
+    margin-top: 100px; /* 헤더와 겹치지 않도록 여백을 추가 */
+    padding: 20px;
+}
+
+/* Hero 섹션 */
+.hero {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 교환 가능한 상품 섹션 */
+.features {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.exchange-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.exchange-btn:hover {
+    background-color: #45a049;
+}
+
+/* 팝업 스타일 */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #45a049;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
