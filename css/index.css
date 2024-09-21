@@ -73,9 +73,9 @@ nav {
     margin: 0;
     margin-top: 80px;
     position: relative;
-    /*background-image:url(https://drive.google.com/file/d/1BL5M5XtnGtekwvo75DyYA_4tOh5GFNGa/view?usp=sharing);*/
-    
-    background: linear-gradient(0deg, rgba(202,255,205,1) 0%, rgba(108,178,111,1) 100%);
+    background-repeat: round;
+    background-image: url("../img/main_background.jpg");
+
     word-break: keep-all;
 }
 
