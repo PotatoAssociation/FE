@@ -13,11 +13,11 @@ body {
 
 /* nav 내부를 flex로 설정 */
 nav {
+    display: flex;
     position: relative;
     background-color: #6cb26f;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
-    display: flex;
     justify-content: space-between; /* 왼쪽, 오른쪽 배치 */
     /*width: 100%;  nav가 헤더 전체를 차지하게 설정 */
     align-items: center;
@@ -38,7 +38,6 @@ nav {
     font-size: 45px;
     font-weight: bold;
     color: white;
-    flex-wrap:wrap;
     text-decoration: none;
     flex-grow:1;
     justify-content: flex-start;
@@ -75,8 +74,9 @@ nav {
     position: relative;
     background-repeat: round;
     background-image: url("../img/main_background.jpg");
-
-    word-break: keep-all;
+    
+    /*background: linear-gradient(0deg, rgba(202,255,205,1) 0%, rgba(108,178,111,1) 100%);
+    */word-break: keep-all;
 }
 
 .hero {
