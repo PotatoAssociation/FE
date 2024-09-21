@@ -1,5 +1,5 @@
 
-/* header ÀüÃ¼ ½ºÅ¸ÀÏ */
+/* header ì „ì²´ ìŠ¤íƒ€ì¼ */
 header {
     position: fixed;
     width: 100%;
@@ -7,20 +7,20 @@ header {
     z-index: 1;
 }
 
-/* nav ³»ºÎ¸¦ flex·Î ¼³Á¤ */
+/* nav ë‚´ë¶€ë¥¼ flexë¡œ ì„¤ì • */
 nav {
     position: relative;
     background-color: #6cb26f;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* ¿ŞÂÊ, ¿À¸¥ÂÊ ¹èÄ¡ */
-    /*width: 100%;  nav°¡ Çì´õ ÀüÃ¼¸¦ Â÷ÁöÇÏ°Ô ¼³Á¤ */
+    justify-content: space-between; /* ì™¼ìª½, ì˜¤ë¥¸ìª½ ë°°ì¹˜ */
+    /*width: 100%;  navê°€ í—¤ë” ì „ì²´ë¥¼ ì°¨ì§€í•˜ê²Œ ì„¤ì • */
     align-items: center;
 }
 
 
-/* ·Î°í ½ºÅ¸ÀÏ */
+/* ë¡œê³  ìŠ¤íƒ€ì¼ */
 .logo {
     width: 50px;
     height: auto;
@@ -28,7 +28,7 @@ nav {
 }
 
 
-/* Á¦¸ñ ½ºÅ¸ÀÏ */
+/* ì œëª© ìŠ¤íƒ€ì¼ */
 .title_logo {
     margin-left: 10px;
     font-size: 45px;
@@ -42,7 +42,7 @@ nav {
 
 
 
-/* ¸Ş´º¸¦ ¿À¸¥ÂÊ ³¡À¸·Î ¹èÄ¡ */
+/* ë©”ë‰´ë¥¼ ì˜¤ë¥¸ìª½ ëìœ¼ë¡œ ë°°ì¹˜ */
 .nav-links {
     width: 100%;
     display: flex;
@@ -53,9 +53,9 @@ nav {
 }
 
 .nav-links li a {
-    margin:0px 10px; /* ¸Ş´º Ç×¸ñ °£ °£°İ */
-    text-decoration: none; /* ¸µÅ© ¹ØÁÙ Á¦°Å */
-    color: white; /* ¸µÅ© ÅØ½ºÆ® »ö»ó */
+    margin:0px 10px; /* ë©”ë‰´ í•­ëª© ê°„ ê°„ê²© */
+    text-decoration: none; /* ë§í¬ ë°‘ì¤„ ì œê±° */
+    color: white; /* ë§í¬ í…ìŠ¤íŠ¸ ìƒ‰ìƒ */
     font-weight: bold;
 }
 
