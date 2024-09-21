@@ -1,83 +1,4 @@
 
-/* header 전체 스타일 */
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-}
-
-/* nav 내부를 flex로 설정 */
-nav {
-    position: relative;
-    background-color: #6cb26f;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between; /* 왼쪽, 오른쪽 배치 */
-    /*width: 100%;  nav가 헤더 전체를 차지하게 설정 */
-    align-items: center;
-}
-
-
-/* 로고 스타일 */
-.logo {
-    width: 50px;
-    height: auto;
-    align-items: center;
-}
-
-
-/* 제목 스타일 */
-.title_logo {
-    margin-left: 10px;
-    font-size: 45px;
-    font-weight: bold;
-    color: white;
-    flex-wrap:wrap;
-    text-decoration: none;
-    flex-grow:1;
-    justify-content: flex-start;
-}
-
-
-
-/* 메뉴를 오른쪽 끝으로 배치 */
-.nav-links {
-    width: 100%;
-    display: flex;
-    list-style: none; 
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-.nav-links li a {
-    margin:0px 10px; /* 메뉴 항목 간 간격 */
-    text-decoration: none; /* 링크 밑줄 제거 */
-    color: white; /* 링크 텍스트 색상 */
-    font-weight: bold;
-}
-
-.nav-links li a:hover {
-    color: #1c8b49; 
-}
-
-.content-container {    
-    top: 0;
-    margin: 0;
-    margin-top: 80px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2rem 0;
-    background: white;
-    word-break: keep-all;
-}
-
-
-
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -101,68 +22,80 @@ body {
     margin: 0 auto;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
 
-.logo a {
+nav {
+    position: relative;
+    background-color: #6cb26f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    align-items: center;
+}
+
+.title_logo {
+    margin-left: 10px;
+    font-size: 45px;
+    font-weight: bold;
     color: white;
     text-decoration: none;
-    font-size: 2.5rem;
-    font-weight: bold;
+    flex-grow: 1;
+    justify-content: flex-start;
 }
 
 
-/* Sidebar */
-.sidebar {
-    width: 15%;
-    background-color: #e0e0e0;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar-header {
-    text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: bold;
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.8rem;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 1.2rem;
-}
-
-
-.sidebar ul {
-    list-style-type: none;
+.nav-links {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: flex-end; 
 }
 
-.sidebar ul li {
-    margin-bottom: 0.8rem;
-}
-
-.sidebar ul li a {
-    font-size: 1rem;
-    display: block;
-    padding: 0.8rem;
+.nav-links li a {
+    margin: 0px 10px;
     text-decoration: none;
-    color: #333;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-
-.sidebar ul li a:hover,
-.sidebar ul li a.active {
-    background-color: #4CAF50;
     color: white;
+    font-weight: bold;
 }
 
-/* Main Content Area */
+.nav-links li a:hover {
+    color: #1c8b49;
+}
+
+/* 중앙에 콘텐츠를 정렬 */
+.content-container {
+    top: 0;
+    margin: 0;
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+    background: white;
+    word-break: keep-all;
+}
+
 .education-container {
-    width: 85%;
+    width: 100%;
+    max-width: 1200px;
     text-align: center;
-    margin-bottom: 3rem;
+    margin: 0 auto;
 }
 
 .education-container h1 {
@@ -177,7 +110,6 @@ body {
     margin-bottom: 2.5rem;
 }
 
-/* Video Section */
 .video-section {
     margin-bottom: 3rem;
 }
@@ -192,6 +124,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
+    justify-items: center; 
 }
 
 .video-card {
@@ -215,7 +148,6 @@ body {
     color: #333;
 }
 
-/* Blog Section */
 .blog-section h2 {
     font-size: 2rem;
     color: #4CAF50;
@@ -226,6 +158,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    justify-items: center; 
 }
 
 .blog-card {
@@ -234,6 +167,8 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: left;
+    width: 100%;
+    max-width: 400px;
 }
 
 .blog-card a {
@@ -260,7 +195,7 @@ body {
     color: #666;
 }
 
-/* Footer */
+/* 푸터 */
 footer {
     background: #333;
     color: white;
